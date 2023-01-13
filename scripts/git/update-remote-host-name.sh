@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # set -x
 # Run this script from the repo you want to update the remote
 

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 git init
 git config user.name "Andres Muñoz"
 git config user.email "am@andresmunozit.com"

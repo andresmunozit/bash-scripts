@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # set -x
 # Load required functions
 scriptdir="$(dirname "$0")"
@@ -53,7 +53,9 @@ done
 echo "Config file $ssh_config_path content:"
 cat "$ssh_config_path" && echo
 
-# STEP: Create the SSH key pairs if they don't exist
+# STEP: Create the ssh key pairs if they don't exist
+# start ssh-agent
+eval `ssh-agent -s`
 for arg in "$@"
 do
   IFS=',' read -ra parts <<< "$arg"
