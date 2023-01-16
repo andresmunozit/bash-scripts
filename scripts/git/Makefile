@@ -2,8 +2,11 @@
 conf-many-certs:
 	./config-many-certificates.sh \
 		'github.com,andresmunozit,am@andresmunozit.com' \
-		'github.com,yalochat,andres.munoz@yalochat.com'
+		'github.com,acount1,user@account1.com' \
+		'bitbucket.com,account2,user@gmail.com'
 clean-ssh-config-backups:
 	./clean-ssh-config-backups.sh
 update-remote:
 	./update-remote-host-name.sh
+show-pubs:
+	./show-pubs.sh
