@@ -68,6 +68,7 @@ do
     echo "Keys $private_key_name and $public_key_name don't exist, creating..."
     ssh-keygen -t rsa -b 4096 -C "$email" -f "$HOME/.ssh/$private_key_name"
   else
+    chmod 600 "$HOME/.ssh/$private_key_name"
     echo "Keys $private_key_name or $public_key_name exist, not creating"
   fi
   # Load the key to the ssh agent
